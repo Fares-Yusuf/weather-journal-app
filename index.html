@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body onscroll="myFunction()">
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="navbar__list"></ul>
+          </div>
+        </div>
+      </nav>
+
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Fares Landing Page</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="About Me" data-nav="Section 1">
+      <div class="landing__container">
+        <h2>About Me</h2>
+        <p>Hi, My name is Fares. I am in my 2nd year of BSc(Hons) Business Information Systems.</p>
+        <p>
+          I like programming and learinging a lot of new technologies.
+          My hobbies consists of binging netflix and my current favorite show is "The Imperfects"
+        </p>
+
+      </div>
+    </section>
+    <section id="Why I am taking this course" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Why I am taking this course</h2>
+        <p>Since I am taking BIS, I learn about both programming and business.
+          However, that means that I need to spend extra effort into learning more about programming that isn't in my
+          courses.</p>
+
+        <p>
+          Moreover, Being a Software Engineer is a never ending learning experience.
+          There are new technologies that are coming out constantly.
+          And unless I keep up, I will become outdated very quickly.
+          "Like many PHP programmers xD"
+        </p>
+      </div>
+    </section>
+    <section id="Future Plans" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Future Plans</h2>
+        <p>
+          After this NanoDegree, I plan on doing more Freelancing until I can land a good internship.
+        </p>
+
+        <p>
+          While Freelancing, I plan on taking another FWD program which is an Expert or Advanced level.
+        </p>
+      </div>
+    </section>
+    <section id="Thank You Note" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Thank You Note!</h2>
+        <p>
+          Thank you so much for reviewing my project and I apologize for my last minute submission.
+          My cousin is getting married and I had to do a lot of the preparations.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
